@@ -2,8 +2,14 @@
 <html>
     <head>
         <title>Tabelas</title>
+        <style>
+    .estilo {
+      background-color: teal;
+      color: rgb(14, 0, 53);
+    }
+        </style>
     </head>
-    <body style="background-color: teal; color: rgb(14, 0, 53);">
+    <body class="estilo">
 
         <h2>Conceitos sobre Formulario no HTML</h2>
         <p>Esta página possui um resumo sobre os conceitos do HTML!</p>
@@ -30,31 +36,60 @@
             <form>
                 <div>
                     <label for="nome">Nome: </label>
-                    <input style="background-color: teal; color: rgb(14, 0, 53);" type="text">
+                    <input class="estilo" type="text">
                 </div> <br>
 
                 <div>
                     <label for="idade">Idade: </label>
-                    <input style="background-color: teal; color: rgb(14, 0, 53);" type="number" min="1" max="120">
+                    <input class="estilo" type="number" min="0" max="120">
                 </div> <br>
 
                 <div>
                     <label for="usuario">Usuário: </label>
-                    <input style="background-color: teal; color: rgb(14, 0, 53);" type="text">
+                    <input class="estilo" type="text">
                 </div> <br>
 
                 <div>
                     <label for="senha">Senha: </label>
-                    <input style="background-color: teal; color: rgb(14, 0, 53);" type="password">
+                    <input class="estilo" type="password">
                 </div> <br>
 
                 <div>
                     <label for="data">Data do Evento: </label>
-                    <input style="background-color: teal; color: rgb(14, 0, 53);" type="datetime-local">
+                    <input class="estilo" type="datetime-local">
                 </div> <br>
 
                 <div>
-                    <button style="background-color: teal; color: rgb(14, 0, 53);" type="submit">Enviar</button>
+                    <label for="telefone">Telefone: </label>
+                    <input class="estilo" type="tel" required placeholder="(XX)XXXXXXXXX">
+                </div> <br>
+
+                <div>
+                    <label for="peso">Peso: </label>
+                    <input class="estilo" type="number" min="0" max="120" step="0.5">
+                </div> <br>
+
+                <div>
+                    <label for="volume">Volume: </label>
+                    <input class="estilo" type="range" min="0" max="100" step="10">
+                </div> <br>
+
+                <div>
+                    <fildset> <legend>Estado Civil</legend>
+                    <label>
+                    <input class="estilo" name="est_civil" type="radio" value="casado">Casado
+                    </label>
+                    <label>
+                    <input class="estilo" name="est_civil" type="radio" value="solteiro">Solteiro
+                    </label>
+                    <label>
+                    <input class="estilo" name="est_civil" type="radio" value="divorciado">Divorciado
+                    </label>
+                    </fildset>
+                </div> <br>
+
+                <div>
+                    <button class="estilo" type="submit">Enviar</button>
                 </div> <br>
             </form>
         </ul>
